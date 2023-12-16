@@ -12,7 +12,6 @@ class BookDetailsScreen extends StatelessWidget {
     final selectedBook = selectedBookProvider.selectedBook;
 
     if (selectedBook == null) {
-      // Handle the case where no book is selected
       return Scaffold(
         appBar: AppBar(
           title: Text('Detalles del Libro'),
@@ -30,9 +29,6 @@ class BookDetailsScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Existing code...
-
-          // Here, use null-aware operators to handle nullable values
           FutureBuilder<List<Map<String, dynamic>>>(
             future: StephenKingApiService().getVillainsForBook(selectedBook.id),
             builder: (context, snapshot) {
@@ -47,8 +43,6 @@ class BookDetailsScreen extends StatelessWidget {
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Existing code...
-
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(

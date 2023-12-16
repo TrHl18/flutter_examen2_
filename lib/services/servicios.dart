@@ -20,7 +20,6 @@ class StephenKingApiService {
       final response = await _dio.get('https://stephen-king-api.onrender.com/villains?bookId=$bookId');
       
       if (response.statusCode == 200) {
-        // Assuming the API returns a list of villains associated with the given bookId
         final List<dynamic> data = response.data;
         return List<Map<String, dynamic>>.from(data);
       } else {

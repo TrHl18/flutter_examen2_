@@ -21,7 +21,6 @@ class BookListScreen extends StatelessWidget {
           } else if (snapshot.hasError) {
             return Text('Error: ${snapshot.error}');
           } else {
-            // Mostrar la lista de libros
             return ListView.builder(
               itemCount: booksProvider.books.length,
               itemBuilder: (context, index) {
@@ -29,10 +28,9 @@ class BookListScreen extends StatelessWidget {
                 return ListTile(
                   title: Text(book.title),
                   onTap: () {
-                    // Seleccionar el libro y navegar a la pantalla de detalles
                     Provider.of<SelectedBookProvider>(context, listen: false)
                         .setSelectedBook(book);
-                    Navigator.pushNamed(context, '/book_details'); // Reemplaza con la ruta correcta
+                    Navigator.pushNamed(context, '/book_details');
                   },
                 );
               },
