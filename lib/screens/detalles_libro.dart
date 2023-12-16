@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_examen_2/services/servicios.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_examen_2/providers/libro_detalles.dart';
-import 'package:flutter_examen_2/models/modelos.dart'; // Asegúrate de importar el modelo correcto
-import 'package:flutter_examen_2/services/servicios.dart'; // Asegúrate de importar el servicio correcto
+import 'package:flutter_examen_2/providers/libro_detalles_provider.dart';
+import 'package:flutter_examen_2/models/modelos.dart'; 
+import 'package:flutter_examen_2/services/servicios.dart'; 
 
 class BookDetailsScreen extends StatelessWidget {
   @override

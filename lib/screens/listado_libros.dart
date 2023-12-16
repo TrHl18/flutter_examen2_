@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_examen_2/providers/libro_detalles.dart';
+import 'package:flutter_examen_2/providers/libro_detalles_provider.dart';
 import 'package:flutter_examen_2/providers/libro_provider.dart';
 import 'package:provider/provider.dart';
 
