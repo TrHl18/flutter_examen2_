@@ -11,7 +11,7 @@ class BookListScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lista de Libros'),
+        title: Text('Libreria', textAlign: TextAlign.center,),
       ),
       body: FutureBuilder(
         future: booksProvider.fetchBooks(),
